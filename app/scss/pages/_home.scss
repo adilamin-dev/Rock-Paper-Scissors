@@ -1,0 +1,32 @@
+body{
+    .RPS-home{
+        display: block;
+        min-height: 100vh;
+        width: 100%;
+        background-image: url("../img/RPS-BG.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        .game-wraper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .controll-bar{
+                display: block;
+                height: 60vh;
+                width: 70px;
+                background-color: rgba(29, 29, 29, 0.74);
+                border-radius: 12px;
+                bottom: 20px;
+            }
+    
+            .game-field{
+                display: block;
+                height: 100vh;
+                width: 800px;
+                background-color: #000000;
+            }
+        }
+        
+    }
+}
