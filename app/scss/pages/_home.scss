@@ -13,11 +13,33 @@ body{
             align-items: center;
             .controll-bar{
                 display: block;
-                height: 60vh;
-                width: 70px;
+                height: 240px;
+                width: 80px;
                 background-color: rgba(29, 29, 29, 0.74);
                 border-radius: 12px;
                 bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                .play-btn{
+                    height: 58px;
+                    width: 58px;
+                    outline-style: none;
+                    border-radius: 50%;
+                    display: block;
+                    padding: 0px;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 14px #00000073;
+                    transition: all 0.2s ease-in-out;
+                    img{
+                        height: inherit;
+                        width: inherit;
+                    }
+                }
+                .play-btn:hover{
+                    transform: scale(1.2);
+                }
             }
     
             .game-field{
