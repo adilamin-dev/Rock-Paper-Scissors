@@ -15,7 +15,7 @@ body{
                 display: block;
                 height: 240px;
                 width: 80px;
-                background-color: rgba(29, 29, 29, 0.74);
+                background-color: rgba(29, 29, 29, 0.705);
                 border-radius: 12px;
                 bottom: 20px;
                 display: flex;
@@ -57,45 +57,91 @@ body{
                     flex-direction: column;
                     justify-content: flex-end;
                     align-items: center;
-                    background-color: burlywood;
+                    // background-color: burlywood;
                     .player-comment-box{
                         display: block;
-                        background-color: aqua;
+                        // background-color: aqua;
                         height: 300px;
                         width: 300px;
                         padding-top: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
                         .comment{
-                            height: 200px;
-                            width: 300px;
-                            background-color: #ffffff;
-                            // border: 6px solid rgb(29, 29, 29);
-                            padding: 2em;
-                            border-radius: 50%;
-                            position: relative;
+                            display: block;
                             p{
+                                display: block;
                                 font-size: 1.2rem;
                                 text-align: center;
-                                font-weight: 600;
-                            }
-                            .comment-arrow{
-                                height: 100px;
-                                width: 40px;
-                                background-color: #ffffff;
-                                clip-path: polygon(50% 100%, 0 0, 100% 0);
-                                // border: 6px solid rgb(29, 29, 29);
-                                position: absolute;
-                                bottom: -40px;
-                                rotate: -10deg;
+                                font-weight: 400;
+                                padding: 1em;
                             }
                         }
+                        .coment-left{
+                            background: url("../img/comment-design-left.svg");
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            height: 160px;
+                        }
+                        .coment-right{
+                            background: url("../img/comment-design-right.svg");
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            height: 160px;
+                        }
                     }
-                    .player{
-                        display: block;
+                    .player-box{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         background-color: brown;
                         height: 350px;
                         width: 300px;
                         margin-bottom: 60px;
+                        .player-hands{
+                            background-color: chartreuse;
+                            width: 100px;
+                            height: 100px;
+                        }
+                        .player{
+                            background-color: darkmagenta;
+                            width: 200px;
+                            height: 350px;
+                        }
                     }
+                }
+            }
+            .score-board{
+                display: block;
+                height: 240px;
+                width: 200px;
+                background-color: rgba(29, 29, 29, 0.705);
+                border-radius: 12px;
+                bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0.8em;
+                .score-box{
+                    h3{
+                        margin-bottom: 0.2rem;
+                    }
+                    span{
+                        font-size: 2.8rem;
+                        font-weight: 700;
+                    }
+                }
+                .h-player-score{
+                    text-align: center;
+                    color: #1fcbff;
+                    margin-bottom: 1rem;
+                }
+                .b-player-score{
+                    text-align: center;
+                    color: #ffdd1f;
                 }
             }
         }
