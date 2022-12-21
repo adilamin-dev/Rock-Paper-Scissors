@@ -99,7 +99,7 @@ body{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: brown;
+                        // background-color: brown;
                         height: 350px;
                         width: 300px;
                         margin-bottom: 60px;
@@ -111,13 +111,36 @@ body{
                                 width: 200px;
                             }
                         }
+                        .bot-player{
+                            display: flex;
+                            justify-content: start;
+                            align-items: flex-end;
+                            img{
+                                height: 234px;
+                            }
+                        }
                         .player-hands{
-                            background-color: chartreuse;
+                            // background-color: chartreuse;
                             width: 100px;
                             height: 100px;
                         }
+                        .human-player-hands{
+                            position: relative;
+                            img {
+                                position: absolute;
+                                top: -26px;
+                                right: 2px;
+                            }
+                        }
+                        .bot-player-hands{
+                            position: relative;
+                            img{
+                               position: absolute; 
+                               top: 4px;
+                            }
+                        }
                         .player{
-                            background-color: darkmagenta;
+                            // background-color: darkmagenta;
                             width: 200px;
                             height: 350px;
                         }
@@ -126,7 +149,7 @@ body{
             }
             .score-board{
                 display: block;
-                height: 240px;
+                height: 260px;
                 width: 200px;
                 background-color: rgba(29, 29, 29, 0.705);
                 border-radius: 12px;
@@ -135,12 +158,16 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 0.8em;
+                padding: 1em;
+                .score-board-title{
+                    color: #ffffff;
+                    margin-bottom: 1rem;
+                }
                 .score-box{
                     h3{
                         margin-bottom: 0.2rem;
                     }
-                    span{
+                    p{
                         font-size: 2.8rem;
                         font-weight: 700;
                     }

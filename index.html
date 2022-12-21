@@ -12,13 +12,13 @@
     <div class="container">
       <div class="game-wraper">
         <div class="controll-bar">
-          <div class="play-btn rock">
+          <div id="rockBtn" class="play-btn rock">
             <img src="./dist/img/rock-btn.svg" alt="" srcset="">
           </div>
-          <div class="play-btn paper">
+          <div id="paperBtn" class="play-btn paper">
             <img src="./dist/img/paper-btn.svg" alt="" srcset="">
           </div>
-          <div class="play-btn scissors">
+          <div id="scissorsBtn" class="play-btn scissors">
             <img src="./dist/img/scissors-btn.svg" alt="" srcset="">
           </div>
         </div>
@@ -33,7 +33,9 @@
             <div class="player human-player">
               <img src="./dist/img/g3294.svg" alt="" srcset="">
             </div>
-            <div class="player-hands human-player-hands"></div>
+            <div class="player-hands human-player-hands">
+              <img src="./dist/img/h-paper.svg" alt="" srcset="">
+            </div>
           </div>
         </div>
         <div class="bot-player-wraper player-wraper">
@@ -43,19 +45,24 @@
             </div>
           </div>
           <div class="player-box">
-            <div class="player-hands bot-player-hands"></div>
-            <div class="player bot-player"></div>
+            <div class="player-hands bot-player-hands">
+              <img src="./dist/img/b-scissors.svg" alt="" srcset="">
+            </div>
+            <div class="player bot-player">
+              <img src="./dist/img/g19739.svg" alt="" srcset="">
+            </div>
           </div>
         </div>
       </div>
       <div class="score-board">
+        <h3 class="score-board-title">Wining Score: 50</h3>
         <div class="score-box h-player-score">
           <h3>Your Score:</h3>
-          <span class="score">50</span>
+          <p class="score h-score">0</p>
         </div>
         <div class="score-box b-player-score">
           <h3>BOT Score:</h3>
-          <span class="score">50</span>
+          <p class="score b-score">0</p>
         </div>
       </div>
       </div>
