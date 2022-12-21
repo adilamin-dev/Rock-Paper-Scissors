@@ -73,7 +73,10 @@ body .RPS-home .game-wraper .controll-bar .play-btn img {
   width: inherit;
 }
 body .RPS-home .game-wraper .controll-bar .play-btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+body .RPS-home .game-wraper .controll-bar .play-btn:active {
+  transform: scale(0.96);
 }
 body .RPS-home .game-wraper .game-field {
   display: block;
@@ -134,6 +137,14 @@ body .RPS-home .game-wraper .game-field .player-wraper .player-box {
   width: 300px;
   margin-bottom: 60px;
 }
+body .RPS-home .game-wraper .game-field .player-wraper .player-box .human-player {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+body .RPS-home .game-wraper .game-field .player-wraper .player-box .human-player img {
+  width: 200px;
+}
 body .RPS-home .game-wraper .game-field .player-wraper .player-box .player-hands {
   background-color: chartreuse;
   width: 100px;
@@ -166,7 +177,7 @@ body .RPS-home .game-wraper .score-board .score-box span {
 }
 body .RPS-home .game-wraper .score-board .h-player-score {
   text-align: center;
-  color: #1fcbff;
+  color: #08a0ce;
   margin-bottom: 1rem;
 }
 body .RPS-home .game-wraper .score-board .b-player-score {

@@ -38,7 +38,10 @@ body{
                     }
                 }
                 .play-btn:hover{
-                    transform: scale(1.2);
+                    transform: scale(1.1);
+                }
+                .play-btn:active{
+                    transform: scale(0.96);
                 }
             }
     
@@ -100,6 +103,14 @@ body{
                         height: 350px;
                         width: 300px;
                         margin-bottom: 60px;
+                        .human-player{
+                            display: flex;
+                            justify-content: end;
+                            align-items: flex-end;
+                            img{
+                                width: 200px;
+                            }
+                        }
                         .player-hands{
                             background-color: chartreuse;
                             width: 100px;
@@ -136,12 +147,12 @@ body{
                 }
                 .h-player-score{
                     text-align: center;
-                    color: #1fcbff;
+                    color: $h-color;
                     margin-bottom: 1rem;
                 }
                 .b-player-score{
                     text-align: center;
-                    color: #ffdd1f;
+                    color: $b-color;
                 }
             }
         }
